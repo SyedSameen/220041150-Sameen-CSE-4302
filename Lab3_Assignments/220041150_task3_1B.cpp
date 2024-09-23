@@ -3,9 +3,9 @@ using namespace std;
 class Time
 {
 private:
-    int hour=0;
-    int minute=0;
-    int second=0;
+    int hour;
+    int minute;
+    int second;
     void valid()
     {
         if(second>=60)
@@ -24,6 +24,12 @@ private:
         }
     }
 public:
+    Time()
+    {
+        int hour=0;
+        int minute=0;
+        int second=0;
+    }
     int hours()
     {
         return hour;

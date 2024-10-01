@@ -22,14 +22,14 @@ public:
         totalAccountsCreated++;
         totalAccountsPresent++;
     }
-    void showInfo() const
+    void showInfo()
     {
         cout << "Account no.: " << accnum << endl;
         cout << "Holder name: " << holder << endl;
         cout << "Account type: " << type << endl;
         cout << "Balance: BDT " << balance << endl;
     }
-    int showBalance() const
+    int showBalance() 
     {
         return balance;
     }
@@ -83,9 +83,9 @@ public:
         totalAccountsPresent--;
     }
 };
-int BankAccount::totalAccountsCreated = 0;
-int BankAccount::totalAccountsPresent = 0;
-float BankAccount::totalSourceTaxCollected = 0.0;
+int BankAccount::totalAccountsCreated ;
+int BankAccount::totalAccountsPresent ;
+float BankAccount::totalSourceTaxCollected ;
 void display_stat()
 {
     cout << "Total Bank Accounts Created: " << BankAccount::getTotalAccountsCreated() << endl;
